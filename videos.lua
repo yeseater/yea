@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local githubLink = "https://cdn.discordapp.com/attachments/1320912665249452083/1320949517507362927/listen_here.webm?ex=676b759b&is=676a241b&hm=4deedd8ed0f55291dfdedae94969f75990534055c686a4b01f81f60237231e6b&"
 local response = request({Url = githubLink, Method = "GET"})
 if response.StatusCode == 200 then
-    local localFilePath = "workspace/FirstDaddyVideo.webm"
+    local localFilePath = "FirstDaddyVideo.webm"
     writefile(localFilePath, response.Body)
     wait()
     local customVideo = getcustomasset(localFilePath)
@@ -23,7 +23,7 @@ end
 githubLink2 = "https://cdn.discordapp.com/attachments/1320912665249452083/1320949517507362927/listen_here.webm?ex=676b759b&is=676a241b&hm=4deedd8ed0f55291dfdedae94969f75990534055c686a4b01f81f60237231e6b&"
 local response2 = request({Url = githubLink2, Method = "GET"})
 if response2.StatusCode == 200 then
-    local localyFilePath = "workspace/Tests.webm"
+    local localyFilePath = "Tests.webm"
     writefile(localyFilePath, response.Body)
     wait()
     local customVideo = getcustomasset(localyFilePath)
